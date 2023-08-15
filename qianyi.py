@@ -6,9 +6,10 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt
 from sklearn import preprocessing
+import random
 
 # 定义RNN模型
-
+random.seed(123)  # 设置随机数种子为123
 class RNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super(RNN, self).__init__()
