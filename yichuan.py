@@ -11,7 +11,10 @@ import matplotlib.pyplot as plt
 from sklearn import preprocessing
 import time
 import csv
+import random
 
+
+random.seed(123)  # 设置随机数种子为123
 start_time = time.time()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
